@@ -26,10 +26,11 @@ def merge(left, right, merged):
 
     return merged
 
+
 def is_anagram(first_string: str, second_string: str):
-    if first_string == '' and second_string == '':
-        return ('', '', False)
-    
+    if first_string == "" and second_string == "":
+        return (first_string, second_string, False)
+
     first = list(first_string.lower())
     second = list(second_string.lower())
 
@@ -37,6 +38,6 @@ def is_anagram(first_string: str, second_string: str):
     ordered_second = merge_sort(second)
 
     if ordered_first == ordered_second:
-        return (''.join(ordered_first), ''.join(ordered_second), True)
-    
-    return (''.join(ordered_first), ''.join(ordered_second), False)
+        return ("".join(ordered_first), "".join(ordered_second), True)
+
+    return ("".join(ordered_first), "".join(ordered_second), False)
