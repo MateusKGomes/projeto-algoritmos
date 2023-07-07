@@ -1,5 +1,6 @@
 from utils.order import merge_sort
 
+
 def is_anagram(first_string: str, second_string: str):
     if first_string == "" and second_string == "":
         return (first_string, second_string, False)
