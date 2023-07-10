@@ -1,6 +1,3 @@
-from challenges.utils.order import merge_sort
-
-
 def find_duplicate(nums: list):
     ordered = sorted(nums)
     for num in range(0, len(ordered) - 1):
