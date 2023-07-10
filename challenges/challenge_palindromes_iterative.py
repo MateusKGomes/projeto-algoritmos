@@ -11,5 +11,3 @@ def is_palindrome_iterative(word: str):
         return True
 
     return False
-
-#
